@@ -114,9 +114,9 @@ section:target{
   background-color: red;
   color: blue;
 }
-.dropdown label + div{
+.dropdown li:not(:first-child){
   display:none;
 }
-.dropdown label:hover + div{
+.dropdown:hover li:not(:first-child){
   display:block;
 }
