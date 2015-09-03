@@ -52,6 +52,8 @@ img{
 main, section{
   position:relative;
 }
+
+
 header, nav, header li{
   background-color:#fa8;
 }
@@ -84,4 +86,25 @@ header a, label{
 }
 header a:hover, label:hover{
   background-color:rgba(255, 255, 255, 0.3);
+}
+
+section{
+  display:none;
+}
+section:target{
+  display:block;
+}
+
+.dropdown{
+  display:block;
+  width:100%;
+  position:absolute;
+}
+
+.dropdown li:not(:first-child){
+  display:none;
+}
+
+.dropdown:hover li:not(:first-child){
+  display:block;
 }
