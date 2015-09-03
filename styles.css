@@ -52,6 +52,12 @@ img{
 main, section{
   position:relative;
 }
+section{
+  display:none;
+}
+section:target{
+  display:block;
+}
 header, nav, header li{
   background-color:#fa8;
 }
