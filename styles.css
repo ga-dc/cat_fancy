@@ -78,10 +78,29 @@ header a, label{
   height:50px;
   line-height:50px;
 }
-.dropdown li, label{
+
+.dropdown{
+  margin-top: 1em;
+}
+
+.dropdown li:not(:first-child), label{
   line-height:50px;
   cursor:pointer;
+  display: none;
 }
+
+.dropdown:hover li:not(:first-child), label{
+  display: block;
+}
+
 header a:hover, label:hover{
   background-color:rgba(255, 255, 255, 0.3);
+}
+
+section{
+  display:none;
+}
+
+section:target{
+  display:block;
 }
