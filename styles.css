@@ -85,3 +85,35 @@ header a, label{
 header a:hover, label:hover{
   background-color:rgba(255, 255, 255, 0.3);
 }
+
+.dropdown input[type="radio"]{
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  opacity: 0.01;
+}
+
+.dropdown li:hover {
+  background-color:rgba(255, 255, 255, 0.3);
+}
+
+.dropdown input[type="radio"] + label{
+  display: none;
+}
+
+.dropdown:hover input[type="radio"] + label{
+  display: block;
+}
+
+section {
+  display: none;
+}
+
+section:target{
+  display: block;
+}
+
+input[type=radio]:checked+label{
+  background-color:rgba(51,34,34,0.4);
+}
