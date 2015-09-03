@@ -48,12 +48,12 @@ img{
   box-shadow:0px 0px 10px 0px #888;
 }
 
-
 main, section{
   position:relative;
 }
 header, nav, header li{
   background-color:#fa8;
+  border-radius: 20px;
 }
 header{
   position:fixed;
@@ -78,10 +78,43 @@ header a, label{
   height:50px;
   line-height:50px;
 }
+
+header a:hover, label:hover{
+  background-color:rgba(255, 255, 255, 0.3);
+}
+
+.dropdown {
+  display: block;
+  width: 80%;
+  position: absolute;
+}
 .dropdown li, label{
   line-height:50px;
   cursor:pointer;
 }
-header a:hover, label:hover{
-  background-color:rgba(255, 255, 255, 0.3);
+
+.dropdown input[type=radio]:checked + label{
+  background-color:#FF9999;
+  color:#eee;
+}
+
+input[type = radio]{
+  cursor: pointer;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  opacity: 0;
+}
+
+input[type=radio] + label{
+  display:block;
+  background-color:#eee;
+  color:#369;
+}
+.dropdown li:not(:first-child){
+  display:none;
+}
+.dropdown:hover li:not(:first-child){
+  display:block;
 }
