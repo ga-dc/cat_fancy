@@ -78,6 +78,15 @@ header a, label{
   height:50px;
   line-height:50px;
 }
+
+input[type=radio] {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  opacity: 0.01;
+}
+
 .dropdown li, label{
   line-height:50px;
   cursor:pointer;
