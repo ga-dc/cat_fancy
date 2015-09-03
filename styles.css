@@ -78,10 +78,32 @@ header a, label{
   height:50px;
   line-height:50px;
 }
+
+.dropdown input[type=radio]{
+  height:1px;
+  width:1px;
+  opacity:0.01;
+  overflow:hidden;
+  position:absolute;
+}
+
+.dropdown input[type=radio]:checked + label{
+  color: #f00;
+}
+
 .dropdown li, label{
   line-height:50px;
   cursor:pointer;
 }
+
+.dropdown li:not(:first-child) {
+  display:none;
+}
+
+.dropdown:hover li:not(:first-child){
+  display:block;
+}
+
 header a:hover, label:hover{
   background-color:rgba(255, 255, 255, 0.3);
 }
