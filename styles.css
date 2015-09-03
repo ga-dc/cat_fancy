@@ -48,7 +48,7 @@ img{
   box-shadow:0px 0px 10px 0px #888;
 }
 
-
+/* ======= ======= ======= */
 main, section{
   position:relative;
 }
@@ -78,10 +78,46 @@ header a, label{
   height:50px;
   line-height:50px;
 }
-.dropdown li, label{
-  line-height:50px;
-  cursor:pointer;
-}
 header a:hover, label:hover{
   background-color:rgba(255, 255, 255, 0.3);
+}
+
+/* ======= ======= ======= */
+section{
+  display:none;
+}
+section:target{
+  display:block;
+}
+
+/* ======= ======= ======= */
+.dropdown li, label{
+  line-height:50px;
+}
+.dropdown li:hover{
+  background-color:#fb8;
+  cursor:pointer;
+}
+.dropdown input[type=radio]{
+  width:1px;
+  height:1px;
+  overflow:hidden;
+  position:absolute;
+  opacity:0.01;
+}
+.dropdown input[type=radio] + label{
+  /*display:none;*/
+  display:block;
+  background-color:#fa8;
+  color:#369;
+}
+.dropdown input[type=radio]:hover + label{
+  background-color:#369;
+  color:#eee;
+}
+.dropdown a + div{
+  display:none;
+}
+.dropdown a:hover + div{
+  display:block;
 }
