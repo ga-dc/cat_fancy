@@ -89,7 +89,6 @@ header a:hover, label:hover{
 
 input[type=radio]{
   display:block;
-  overflow:hidden;
   position:absolute;
   opacity: 0;
 }
