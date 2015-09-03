@@ -103,3 +103,11 @@ header a:hover, label:hover{
 .dropdown:hover li:not(:first-child) {
   display: block;
 }
+
+section {
+  display:none;
+}
+
+section:target {
+  display: block;
+}
