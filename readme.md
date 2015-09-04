@@ -8,3 +8,4 @@ The HTML and the bulk of the CSS has been provided for you. Your task is to chan
 - The "Rate these cats!" section to the top-right becomes a drop-down menu.
 - The radio buttons are hidden, but there's still some visual feedback to show which rating has been selected.
 
+http://ga-dc.github.io/cat_fancy
