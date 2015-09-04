@@ -1,4 +1,4 @@
-*{
+* {
   margin:0;
   border:0;
   padding:0;
@@ -78,10 +78,38 @@ header a, label{
   height:50px;
   line-height:50px;
 }
+header a:hover, label:hover{
+  background-color:rgba(255, 255, 255, 0.3);
+}
+section{
+  display:none;
+}
+section:target{
+  display:block;
+}
+input[type=radio]{
+  display:block;
+  width:1px;
+  height:1px;
+  opacity:0.1;
+  overflow:hidden;
+  position:absolute;
+}
+input[type=radio]:checked + label{
+  text-decoration:underline;
+}
+.dropdown{
+  display:block;
+  width:100%;
+  position:absolute;
+}
 .dropdown li, label{
   line-height:50px;
   cursor:pointer;
 }
-header a:hover, label:hover{
-  background-color:rgba(255, 255, 255, 0.3);
+.dropdown li:not(:first-child){
+  display:none;
+}
+.dropdown:hover li:not(:first-child){
+  display:block;
 }
