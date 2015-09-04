@@ -85,3 +85,38 @@ header a, label{
 header a:hover, label:hover{
   background-color:rgba(255, 255, 255, 0.3);
 }
+
+/*hide sections until targeted*/
+section{
+  display:none;
+}
+section:target{
+  display:block;
+}
+
+/*change radio buttons in dropdown*/
+.dropdown input[type=radio]{
+  height: 1px;
+  width: 1px;
+  opacity: 0.01;
+  position: absolute;
+}
+
+.dropdown input[type=radio] + label{
+  display:block;
+  background-color: #fa8;
+}
+.dropdown input[type=radio]:hover + label{
+  background-color:rgba(255, 255, 255, 0.3);
+  color:#eee;
+}
+.dropdown input[type=radio]:checked + label{
+  background-color: red;
+  color: blue;
+}
+.dropdown li:not(:first-child){
+  display:none;
+}
+.dropdown:hover li:not(:first-child){
+  display:block;
+}
