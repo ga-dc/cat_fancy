@@ -82,6 +82,58 @@ header a, label{
   line-height:50px;
   cursor:pointer;
 }
+
+.dropdown input[type=radio] {
+  width: 1px;
+  height: 1px;
+  display: none;
+  overflow: hidden;
+  position: absolute;
+  opacity: 0.01;
+}
+
+.dropdown input[type=radio]:hover {
+  display: block;
+}
+
+.dropdown input[type=radio] + label {
+  display: block;
+  background: #fa8;
+  color: lightyellow;
+}
+
+.dropdown input[type=radio]:hover + label {
+  background: #322;
+  color: whitesmoke;
+}
+
+.dropdown input[type=radio]:target + label {
+  color: #f00;
+}
+
+.dropdown a + ul {
+  display: none;
+}
+
+.dropdown a:hover + ul {
+  display: block;
+}
+
 header a:hover, label:hover{
   background-color:rgba(255, 255, 255, 0.3);
+}
+
+#happy, #grumpy, #sleepy {
+  display:none;
+}
+#happy:target {
+  display:block;
+}
+
+#grumpy:target {
+  display: block;
+}
+
+#sleepy:target {
+  display:block;
 }
