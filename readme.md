@@ -8,6 +8,8 @@ The HTML and the bulk of the CSS has been provided for you. Your task is to chan
 - The "Rate these cats!" section to the top-right becomes a drop-down menu, in which only one of the three options is shown at a time.
     - You should *not* use the `<select>` tag because it cannot be styled. Use radio buttons instead.
 
+**Input elements do NOT need to go in a `<form>` tag!** If we were to actually be submitting information with this site we'd probably need a `<form>`, but it's not necessary in this case.
+
 ## CSS selectors that will be useful
 
 ```
