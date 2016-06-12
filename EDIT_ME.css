@@ -1,0 +1,15 @@
+section:not(:target){
+    display:none;
+}
+section:not(:target) + section:not(:target) + section{
+    display:block;
+}
+.dropdown input[type=radio]{
+    display:none;
+}
+.dropdown:not(:hover) label{
+    display:none;
+}
+.dropdown input[type=radio]:checked + label{
+    text-decoration:underline;
+}
