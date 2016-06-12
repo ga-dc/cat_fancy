@@ -16,7 +16,7 @@ id=""
 for=""
 ```
 
-## Things that will be useful
+## CSS selectors that will be useful
 
 ```
 :target
@@ -25,3 +25,4 @@ element1 + element2
 ```
 
 Here's one solution: http://ga-wdi-exercises.github.io/cat_fancy
+
