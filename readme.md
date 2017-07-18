@@ -1,5 +1,7 @@
 # Cat Fancy
 
+![](https://i.imgur.com/iMKpgZ9.png)
+
 Adam made this website to show off his favorite cat photos. It's a pretty great website, but it could be *even better*.
 
 The HTML and the bulk of the CSS has been provided for you. Your task is to change `EDIT_ME.css` and `index.html` so that:
